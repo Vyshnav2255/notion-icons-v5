@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /search.json
+---
+[
+  {% for icon in site.icons %}
+    {
+      "title"    : "{{ icon.title | escape }}",
+      "tags"     : "{{ icon.tags | join: ', ' }}",
+      "url"      : "{{ icon.url | relative_url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

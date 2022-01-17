@@ -1,0 +1,40 @@
+<!-- Collect tags from all posts -->
+{%- assign tags = blank -%}
+{%- for icon in site.icons -%}
+  {%- assign icon_tags = icon.tags | join:'|' | append:'|' -%}
+  {%- if icon_tags != '|' -%}
+    {%- assign tags = tags | append:icon_tags -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign tags = tags | split:'|' | uniq | sort -%}
+
+<!-- List tags & related posts -->
+<div class="p-3 button-group filter-button-group" style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter="*">
+    <span class="circle-color" style="background: conic-gradient(from 180deg at 50% 50%, #F82125 0deg, #F37500 62.5deg, #F5C700 122.5deg, #00B861 182.5deg, #0696DE 246.25deg, #9C1CAE 304.38deg, #FD463C 360deg);"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Hot">
+    <span class="circle-color" style="background-color: #F82125;"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Sun">
+    <span class="circle-color" style="background-color: #F37500;"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Banana">
+    <span class="circle-color" style="background-color: #F5C700;"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Mint">
+    <span class="circle-color" style="background-color: #00C59E;"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Leaf">
+    <span class="circle-color" style="background-color: #00B861;"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Water">
+    <span class="circle-color" style="background-color: #0696DE;"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Grapes">
+    <span class="circle-color" style="background-color: #9C1CAE;"></span>
+  </a>
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".Silver">
+    <span class="circle-color" style="background-color: #BCC3C7;"></span>
+  </a>
+</div>

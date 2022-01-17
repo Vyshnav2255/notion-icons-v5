@@ -1,0 +1,118 @@
+.search-box {
+    box-shadow:none !important;
+}
+.article {
+
+    .article-metadata {
+        font-size: 14px;
+        margin-top: -6px;
+    }
+
+    .tag:hover {
+        background-color: #43d6b5;
+        color: #003933 !important;
+    }
+
+    
+    h1, h2 { margin-top: 32px; }
+
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .video {
+        position: relative;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline):not(.account):not(.tweet-icon):not(.tweet-foot):not(.video-img):not(.p-hunt)  {
+        display: inline-block;
+        text-decoration: none;
+        color: #003933;
+        background-color: #89ffdd;
+        border-radius: .125rem;
+        padding-left: .125rem;
+        padding-right: .125rem;
+        margin-bottom: .125rem;
+        margin-top: .125rem;
+
+        &:hover { 
+            background: #43d6b5;
+        }
+    }
+
+    pre {
+        background: $light;
+        border: 1px solid #ddd;
+        color: $dark;
+        font-family: monospace;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        padding: 1em 1.5em;
+        display: block;
+        page-break-inside: avoid;
+        overflow: auto;
+        word-wrap: break-word;
+    }
+
+    code.highlighter-rouge {
+        background-color: $light;
+        color: $dark;
+        border-radius: 3px;
+        margin: 0;
+        padding: .2em .65em;
+    }
+
+    blockquote {
+        border-left: .25em solid #43d6b5;
+        color: #595959;
+        font-size: 1.12rem;
+        font-style: italic;
+        padding: 0 1em;
+        margin-top: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+      
+    table {
+        display: block;
+        overflow-x: auto;
+        margin: 1rem 0;
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+        }
+
+        th {
+            @extend td;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-weight: 500;
+            text-align: left;
+            background-color: $primary;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: $light;
+        }
+    }
+
+    ul{
+        padding-left: 20px;
+        margin-bottom: 1.5rem;
+    }
+    
+    ol{
+        padding-left: 20px;
+        margin-bottom: 1rem;
+    }
+}

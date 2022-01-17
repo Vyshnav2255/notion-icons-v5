@@ -1,1 +1,1 @@
-# notion-icons-v5
+# notion-icons

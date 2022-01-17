@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+// Custom Fonts
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@600;700&family=Sen:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables",
+        "base",
+        "navbar",
+        "articles",
+        "projects",
+        "theme",
+        "theme-dark";

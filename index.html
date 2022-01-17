@@ -1,0 +1,42 @@
+---
+layout: default
+image: /assets/card.png
+title: Notion Icons 2.0
+---
+{% include intro.html %}
+{% include search.html %}
+{% include filter.html %}
+  <div class="p-3">
+    <ul class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list grid">
+        {% assign iconss = site.icons | sort: 'title'  %}
+        {% for icon in iconss %}
+      <li class="col mb-4 {{ icon.tag }}">
+        <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.url }}.svg" download>
+          <div class="ico mb-2 text-center rounded">
+           <div class="icon-preview p-2">{{ icon.content }}</div>
+          </div>
+        </a>
+        <button class="btn cpybtn text-break name" style="margin-top: -3px; width: 100%; border-radius: 0 0 .25rem .25rem;" data-clipboard-text="{{ icon.image | prepend: site.baseurl | prepend: site.url }}" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to Copy">{{ icon.title }}</button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <script src="/assets/dist/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script>
+    var clipboard = new ClipboardJS('.cpybtn');
+
+    clipboard.on('success', function (e) {
+      console.log(e);
+      $(e.trigger).text("✅ Copied!");
+      e.clearSelection();
+      setTimeout(function() {
+      $(e.trigger).text("Copy");
+    }, 2500);
+    });
+
+    clipboard.on('error', function (e) {
+      console.log(e);
+    });
+  </script>

@@ -1,0 +1,32 @@
+<div class="px-3 text-center intro">
+    <h3 class="mb-3">{{ site.description }}</h3>
+    <p class="text-center">
+        {% include elements/iconbtn.html link="/get-started" text="Get started" icon="check" %}
+        {% include elements/iconbtn.html link="https://shop.vyshnav.xyz/l/zkqvh" text="Download all" icon="download" %}
+        {% include elements/iconbtn.html link="https://www.buymeacoffee.com/vyshnav" text="Buy Me a Coffee" icon="coffee" %}
+    </p>
+
+   <p class="text-center mt-5">
+        <a href="https://www.producthunt.com/posts/notion-icons-3-0?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-notion-icons-3-0" target="_blank" rel="noopener" style="text-decoration: none !important; background-color: transparent;"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=297748&theme=light" alt="Notion Icons 3.0 - Create a More Minimal Workspace | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+    </p>
+
+    {% assign share-url = page.url | prepend: site.baseurl | prepend: site.url %}
+
+    <p class="text-center mt-5">
+        <a class="links"
+        href="https://twitter.com/intent/tweet?text={{ site.title }}&url={{ share-url }}&via={{ site.author.twitter }}&original_referer={{ share-url }}"
+        rel="noreferrer nofollow noopener"
+        target="_blank"
+        title="Twitter"
+        >🐦 Share on Twitter</a>
+        &bull;
+        <a class="links" href="mailto:notionv3@vyshnav.xyz">
+            <span>🐞 Report an Issue</span>
+        </a>
+    </p>
+
+    <p class="text-center">
+        {% include elements/iconbtn.html link="/icon-packs" text="Other Icon Packs" icon="link" %}
+    </p>
+
+</div>
