@@ -28,7 +28,7 @@ defaults:
       path: ""
       type: "icons"
     values:
-      layout: "icon"
+      layout: "none"
 
 plugins:
   - jekyll-admin

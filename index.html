@@ -12,11 +12,11 @@ title: Notion Icons 2.0
         {% for icon in iconss %}
       <li class="col mb-4 {{ icon.tag }}">
         <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.url }}.svg" download>
-          <div class="ico mb-2 text-center rounded">
+          <div class="ico my-2 text-center rounded">
            <div class="icon-preview p-2">{{ icon.content }}</div>
           </div>
         </a>
-        <button class="btn cpybtn text-break name" style="margin-top: -3px; width: 100%; border-radius: 0 0 .25rem .25rem;" data-clipboard-text="{{ icon.image | prepend: site.baseurl | prepend: site.url }}" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to Copy">{{ icon.title }}</button>
+        <button class="btn cpybtn text-break name" style="margin-top: -3px; width: 100%; border-radius: 0 0 .25rem .25rem;" data-clipboard-text="{{ icon.url | prepend: site.baseurl | prepend: site.url }}.svg" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to Copy">{{ icon.title }}</button>
       </li>
       {% endfor %}
     </ul>
