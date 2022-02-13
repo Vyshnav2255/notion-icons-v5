@@ -8,15 +8,15 @@
     </span>
   </div>
 </div>
-<ul class="px-3" id="results-container"></ul>
 
-<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
-<script>
-  var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title} - {tags}</a>',
-        noResultsText: '<li class="list-group-item">No results found</li>',
-        json: '{{ '/search.json' | relative_url }}'
-      })
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#search-input").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#ico li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
 </script>

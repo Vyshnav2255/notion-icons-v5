@@ -7,11 +7,11 @@ title: Notion Icons 2.0
 {% include search.html %}
 {% include filter.html %}
   <div class="p-3">
-    <ul class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list grid">
+    <ul class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list grid" id="ico">
         {% assign iconss = site.icons | sort: 'title'  %}
         {% for icon in iconss %}
-      <li class="col mb-4 {{ icon.tag }}">
-        <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.url }}.svg" download>
+      <li class="col mb-4" id="ic">
+        <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.url }}.svg" id="{{ icon.title }}" download>
           <div class="ico my-2 text-center rounded">
            <div class="icon-preview p-2">{{ icon.content }}</div>
           </div>
