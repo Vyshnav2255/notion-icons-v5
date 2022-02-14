@@ -19,7 +19,7 @@ const changeColor = (color) => {
   const generateUrl = (element) => {
 
     console.log(`Before: ${element}`)
-    const preData = (new XMLSerializer).serializeToString(element.node())
+    const preData = (new XMLSerializer).serializeToString(element)
     console.log(`After: ${preData}`)
     const dataUrl = `data:image/svg+xml ${encodeURIComponent(preData)}`
 
