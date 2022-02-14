@@ -30,7 +30,7 @@ const changeColor = (color) => {
 const downloadIcon = async (e) => {
         
         const svg = await e.getElementsByClassName("svg")
-        console.log(`SVG: ${svg["0"]}`)
+        console.log(`SVG: ${svg}`)
 
         // generate the dataUrl
         const dataUrl = await generateUrl(svg["0"])
