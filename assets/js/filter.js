@@ -34,6 +34,7 @@ const downloadIcon = async (e) => {
     for(let i = 0; i < svg.length; i++) {
         console.log(svg[i])
     }
+    console.log('For loop ended')
 
         // generate the dataUrl
         const dataUrl = await generateUrl(svg[0])
