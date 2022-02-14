@@ -29,16 +29,12 @@ const changeColor = (color) => {
 // Function that downloads the SVG
 const downloadIcon = async (e) => {
         
-    console.log(`Element: ${e}`)
-        // the SVG
-        const svg = e.target
-console.log(`Target: ${svg}`)
         // generate the dataUrl
-        const dataUrl = await generateUrl()
+        const dataUrl = await generateUrl(e)
         
         // create a downloadable element
         const theLink = document.createElement('a')
         theLink.href = dataUrl
-        theLink.download = svg.id
+        theLink.download = e.id
         theLink.click()
     }
