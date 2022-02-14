@@ -30,14 +30,10 @@ const changeColor = (color) => {
 const downloadIcon = async (e) => {
         
         const svg = await e.getElementsByClassName("svg")
-        console.log(`SVG: ${svg}`)
-    for(let i = 0; i < svg.length; i++) {
-        console.log(svg[i])
-    }
-    console.log('For loop ended')
+        console.log(`SVG: ${svg["0"]}`)
 
         // generate the dataUrl
-        const dataUrl = await generateUrl(svg[0])
+        const dataUrl = await generateUrl(svg["0"])
         
         // create a downloadable element
         const theLink = document.createElement('a')
