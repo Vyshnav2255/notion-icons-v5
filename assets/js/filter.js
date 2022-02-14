@@ -17,7 +17,7 @@ const changeColor = (color) => {
 
     const theSerializer = new XMLSerializer()
     const preData = theSerializer.serializeToString(element)
-    const dataUrl = `data:image/svg+xml ${encodeURIComponent(preData)}`
+    const dataUrl = `data:image/svg+xml,${encodeURIComponent(preData)}`
 
     return dataUrl
 }
