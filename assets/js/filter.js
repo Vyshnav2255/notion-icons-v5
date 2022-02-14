@@ -15,9 +15,7 @@ const changeColor = (color) => {
   // Funtion that generates the dataUrl
   const generateUrl = (element) => {
 
-    console.log(`Before: ${element}`)
     const preData = (new XMLSerializer).serializeToString(element)
-    console.log(`After: ${preData}`)
     const dataUrl = `data:image/svg+xml ${encodeURIComponent(preData)}`
 
     return dataUrl
@@ -27,10 +25,10 @@ const changeColor = (color) => {
 const downloadIcon = async (e) => {
         
         const svg = await e.getElementsByTagName("svg")
-        console.log(`SVG: ${svg.length}`)
+        console.log(`SVG: ${svg[0]}`)
 
         // generate the dataUrl
-        const dataUrl = generateUrl(svg["0"])
+        const dataUrl = generateUrl(svg[0])
         
         // create a downloadable element
         const theLink = document.createElement('a')
