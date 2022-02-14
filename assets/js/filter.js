@@ -15,6 +15,7 @@ const changeColor = (color) => {
   // Funtion that generates the dataUrl
   const generateUrl = (element) => {
 
+    // serialize and convert the svg into a dataUrl
     const theSerializer = new XMLSerializer()
     const preData = theSerializer.serializeToString(element)
     const dataUrl = `data:image/svg+xml,${encodeURIComponent(preData)}`
@@ -25,8 +26,8 @@ const changeColor = (color) => {
 // Function that downloads the SVG
 const downloadIcon = async (e) => {
         
+        // get the svg element from the div
         const svg = await e.getElementsByTagName("svg")
-        console.log(`SVG: ${svg}`)
 
         // generate the dataUrl
         const dataUrl = generateUrl(svg[0])
