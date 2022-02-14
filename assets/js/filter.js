@@ -12,7 +12,6 @@ const changeColor = (color) => {
     }
 
 
-
   // Funtion that generates the dataUrl
   const generateUrl = (element) => {
 
@@ -27,7 +26,7 @@ const changeColor = (color) => {
 // Function that downloads the SVG
 const downloadIcon = async (e) => {
         
-        const svg = await e.getElementsByClassName("svg")
+        const svg = await e.getElementsByTagName("svg")
         console.log(`SVG: ${svg.length}`)
 
         // generate the dataUrl
