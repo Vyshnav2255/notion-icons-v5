@@ -1,5 +1,3 @@
-
-
 // Get all the svgs on the page
 const svgs = document.getElementsByClassName("feather")
 
@@ -30,8 +28,7 @@ const changeColor = (color) => {
 const downloadIcon = async (e) => {
         
         const svg = await e.getElementsByClassName("svg")
-    console.log('This works')
-        console.log(`SVG: ${svg}`)
+        console.log(`SVG: ${svg[0]}`)
 
         // generate the dataUrl
         const dataUrl = generateUrl(svg["0"])
