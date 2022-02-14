@@ -29,8 +29,10 @@ const changeColor = (color) => {
 // Function that downloads the SVG
 const downloadIcon = async (e) => {
         
+        const svg = await e.getElementById('fico')
+
         // generate the dataUrl
-        const dataUrl = await generateUrl(e.svg)
+        const dataUrl = await generateUrl(svg)
         
         // create a downloadable element
         const theLink = document.createElement('a')
