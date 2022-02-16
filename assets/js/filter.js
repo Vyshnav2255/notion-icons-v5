@@ -45,10 +45,16 @@ const copyToClipboard = async (element) => {
     // The svg
     const svg = await element.getElementsByTagName("svg")[0]
 
+    // The button
+    const btn = await element.getElementsByTagName("button")[0]
+    const theText = await btn.innerText
+
     // Generate the dataUrl and write it to the clipboard
     const dataUrl = generateUrl(svg)
-    navigator.clipboard.write(dataUrl)
+    navigator.clipboard.writeText(dataUrl)
 
-    console.log("Copied")
+    // Show message
+    btn.innerText = "✅ Copied!"
+    setTimeout(() => btn.innerText = theText, 2500)
 
 }
