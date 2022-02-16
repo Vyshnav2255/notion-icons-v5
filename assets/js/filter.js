@@ -47,7 +47,7 @@ const copyToClipboard = async (element) => {
 
     // Generate the dataUrl and write it to the clipboard
     const dataUrl = generateUrl(svg)
-    navigator.clipboard.writeText(dataUrl)
+    navigator.clipboard.write(dataUrl)
 
     console.log("Copied")
 
