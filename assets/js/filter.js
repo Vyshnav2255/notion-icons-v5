@@ -38,3 +38,23 @@ const downloadIcon = async (e) => {
         theLink.download = e.id
         theLink.click()
     }
+
+// Function that copies the svg
+const copyToClipboard = async (element) => {
+
+    // The svg
+    const svg = await element.getElementsByTagName("svg")[0]
+
+    // The button
+    const btn = await element.getElementsByTagName("button")[0]
+    const theText = await btn.innerText
+
+    // Generate the dataUrl and write it to the clipboard
+    const dataUrl = generateUrl(svg)
+    navigator.clipboard.writeText(dataUrl)
+
+    // Show message
+    btn.innerText = "✅ Copied!"
+    setTimeout(() => btn.innerText = theText, 2500)
+
+}
