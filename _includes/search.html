@@ -15,7 +15,6 @@
   $("#search-input").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#ico li").filter(function() {
-            console.log(this.text())
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
