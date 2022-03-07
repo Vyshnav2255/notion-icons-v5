@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Epilogue', sans-serif;
 }
 
 #container {
@@ -28,7 +28,7 @@ body {
 
 .btn{
     margin-bottom: 8px;
-    background-color: #d4d4d4;
+    background-color: #ffe16b;
     border-color: #000000;
     color: #000000;
     cursor: pointer;
@@ -39,7 +39,7 @@ body {
 
     }
     :hover.btn{
-        background-color: #abacae !important;
+        box-shadow: 4px 4px 0 #000000;
         }
 
 .navbar-light .navbar-nav .nav-link{
@@ -121,7 +121,8 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
 }
 
 .circle-color{
@@ -130,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
     margin: 0 4px 0 4px;
     display: inline-block;
-    border: solid 2px black;
+    border: solid 1px black;
 }
 
 span.circle-color.active {
