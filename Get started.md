@@ -18,12 +18,9 @@ title: Get started
 
 ##### Method-2 : Using SVG
 
-1. Click on the icon.
+1. Click on the icon to download SVG.
 ![4](/images/4.png)
 
-2. Click on Download SVG.
-![5](/images/5.png)
-
-3. Upload it to Notion Emoji Selector.
+2. Upload it to Notion Emoji Selector.
 ![6](/images/6.png)
 ![7](/images/7.png)

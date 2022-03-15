@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Notion Icons 5.0
 description         : >-                               # >- means to ignore newlines until "url:"
-                      Create a More Minimal Workspace
+                      Minimal and Beautiful icons for your Notion Workspace
 
 url                 : "https://notionv5.vyshnav.xyz"                               # base hostname & protocol for your site (e.g. http://example.com)
 baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
