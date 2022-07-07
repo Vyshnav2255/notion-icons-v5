@@ -68,26 +68,17 @@ $dark-900: #121212;
   border: 1px solid #c7caced2 !important;
 }
 .btn{
-  background-color: #ad5f00;
-  border-color: #ffffff;
-  color: #ffffff;
+  background-color: #4b2900;
+  border-color: #fff394;
+  color: #fff394;
 
   svg{
-    fill: #ffffff !important;
+    fill: #fff394 !important;
   }
   &:hover{
-    box-shadow: 4px 4px 0 #ffffff;
+    box-shadow: 4px 4px 0 #fff394;
     }
 }
-
-.badge {
-  background-color: #000000;
-  color: #d4d4d4;
-
-  &:hover{
-    background-color: #333333;
-    }
-  }
 
   .links{
     color: #d4d4d4;

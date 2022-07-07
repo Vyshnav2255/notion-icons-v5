@@ -1,6 +1,6 @@
 <div class="px-3 text-center intro">
-    <h3 class="mb-4">{{ site.description }}</h3>
-    <p class="text-center">
+    <h3 class="mb-5">{{ site.description }}</h3>
+    <p class="text-center mb-5">
         {% include elements/iconbtn.html link="/get-started" text="Get started" icon="check" %}
         {% include elements/iconbtn.html link="https://shop.vyshnav.xyz/l/afohd" text="Download all" icon="download" %}
         {% include elements/iconbtn.html link="https://www.buymeacoffee.com/vyshnav" text="Buy Me a Coffee" icon="coffee" %}
@@ -8,7 +8,7 @@
 
     {% assign share-url = page.url | prepend: site.baseurl | prepend: site.url %}
 
-    <p class="text-center mt-5">
+    <p class="text-center">
         <a class="links"
         href="https://twitter.com/intent/tweet?text={{ site.title }}&url={{ share-url }}&via={{ site.author.twitter }}&original_referer={{ share-url }}"
         rel="noreferrer nofollow noopener"

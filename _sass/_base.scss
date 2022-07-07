@@ -2,24 +2,6 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
-#container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-}
-
-#dummy {
-    padding-top: 100%;
-}
-
-#element {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 // Footer
 .social {
     text-decoration: none !important;
@@ -41,10 +23,6 @@ body {
     :hover.btn{
         box-shadow: 4px 4px 0 #000000;
         }
-
-.navbar-light .navbar-nav .nav-link{
-    color: #4d4d4d;
-}
 
 .branding {
     display: inline;
@@ -80,20 +58,9 @@ small{
   box-sizing: border-box;
 }
 
-.badge {
-    font-weight: 500;
-    background-color: #d4d4d4;
-    color: #000000;
-    font-size: 85%;
-
-    &:hover{
-        background-color: #7e8087;
-        }
-}
-
 .intro{
-    padding-bottom: 30px;
-    padding-top: 100px;
+    margin-bottom: 78px;
+    margin-top: 78px;
 }
 
 .links{
