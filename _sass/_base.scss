@@ -101,10 +101,14 @@ h1, h2, h3, h4, h5, h6 {
     border: solid 1px black;
 }
 
-span.circle-color.active {
-    border: 4px solid #666666;
-}
-
 .search-box{
     border-color: #000000;
+}
+
+.button-group{
+    margin: 32px 0;
+}
+
+.input-group{
+    margin: 32px 0;
 }

@@ -43,29 +43,9 @@ $dark-900: #121212;
   }
 }
 
-.nav-item{
-  color: rgba(235,240,251,0.85) !important;
-}
-.article{
-
-  a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline):not(.account):not(.tweet-icon):not(.tweet-foot):not(.nav-item){
-    color: #000201 !important;
-    text-decoration-color: #89ffdeb7 !important;
-  }
-
-  .social-icon{
-    fill: #ebf0fbd9 !important;
-    &:hover{
-      fill: #43d6b5 !important;
-  }
-  }
-  .icon-svg-themed{
-    fill: #ffffff !important;
-}
-}
 .item{
   background-color: #1a1a1a !important;
-  border: 1px solid #c7caced2 !important;
+  border: 1px solid #ffffff !important;
 }
 .btn{
   background-color: #4b2900;

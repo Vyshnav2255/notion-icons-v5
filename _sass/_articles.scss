@@ -2,17 +2,6 @@
     box-shadow:none !important;
 }
 .article {
-
-    .article-metadata {
-        font-size: 14px;
-        margin-top: -6px;
-    }
-
-    .tag:hover {
-        background-color: #43d6b5;
-        color: #003933 !important;
-    }
-
     
     h1, h2 { margin-top: 32px; }
 
@@ -23,21 +12,5 @@
         height: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
-    }
-
-    a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline):not(.account):not(.tweet-icon):not(.tweet-foot):not(.video-img):not(.p-hunt)  {
-        display: inline-block;
-        text-decoration: none;
-        color: #003933;
-        background-color: #89ffdd;
-        border-radius: .125rem;
-        padding-left: .125rem;
-        padding-right: .125rem;
-        margin-bottom: .125rem;
-        margin-top: .125rem;
-
-        &:hover { 
-            background: #43d6b5;
-        }
     }
 }

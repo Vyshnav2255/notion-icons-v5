@@ -1,4 +1,3 @@
-<!-- Collect tags from all posts -->
 {%- assign tags = blank -%}
 {%- for icon in site.icons -%}
   {%- assign icon_tags = icon.tags | join:'|' | append:'|' -%}
@@ -8,8 +7,7 @@
 {%- endfor -%}
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
-<!-- List tags & related posts -->
-<div class="p-3 button-group filter-button-group" style="display: flex; flex-wrap: wrap; justify-content: center;">
+<div class="px-3 button-group filter-button-group" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
   <a onclick="changeColor('#000000')" class="button text-decoration-none no-underline tag-item" style="cursor: pointer;">
     <span class="circle-color" style="background-color: #000000;"></span>
   </a>
