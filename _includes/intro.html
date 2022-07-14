@@ -4,7 +4,6 @@
         {% include elements/iconbtn.html link="/get-started" text="Get started" icon="check" %}
         {% include elements/iconbtn.html link="https://shop.vyshnav.xyz/l/afohd" text="Download all" icon="download" %}
         {% include elements/iconbtn.html link="https://www.buymeacoffee.com/vyshnav" text="Buy Me a Coffee" icon="coffee" %}
-        {% include elements/iconbtn.html link="/icon-packs" text="Other Icon Packs" icon="link" %}
     </p>
 
     {% assign share-url = page.url | prepend: site.baseurl | prepend: site.url %}
@@ -20,5 +19,8 @@
         <a class="links" href="mailto:notionv5@vyshnav.xyz">
             <span>🐞 Report an Issue</span>
         </a>
+    </p>
+    <p class="text-center mb-5">
+        {% include elements/iconbtn.html link="/icon-packs" text="Other Icon Packs" icon="link" %}
     </p>
 </div>
