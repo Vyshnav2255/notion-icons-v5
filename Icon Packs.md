@@ -24,6 +24,16 @@ A simple icon pack that matches your workspace, contains 549 icons in 9 Differen
 
 ---
 
+![1](/images/other/17.png)
+### Notion Icons 3D
+It's a library of gorgeous 3D icons for your Notion workspace. The pack contains 122 icons in 3 different colors & camera angles. So a total of 1098 icons.
+
+<p class="text-center">
+{% include elements/iconbtn.html link="https://notion3d.vyshnav.xyz" text="Download Here" icon="download" %}
+</p>
+
+---
+
 ![1](/images/other/15.png)
 ### Notion Icons 4.0
 A modified version of my Notion Icons 2.0 pack. This pack is a minimal version of that pack. The pack contains 272 icons. As always, it supports both light and dark modes. 
